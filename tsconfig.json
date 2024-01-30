@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "inlineSourceMap": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "skipLibCheck": true
+  },
+  "include": [
+//    "declare.d.ts",
+//    "src/view/**/*.ts",
+//    "test/**/*.ts",
+    "stories/**/*.ts",
+    "src/web-component.ts"
+  ]
+}
