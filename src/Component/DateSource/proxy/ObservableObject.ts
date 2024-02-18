@@ -1,4 +1,4 @@
-import { ObjectState, ObservableObject } from './ProxyObject'
+import {ObjectState, ProxyObject} from './ProxyObject'
 import {v4 as uuidv4} from 'uuid';
 import EventEmitter from 'EventEmitter';
 import _ = require("lodash");
@@ -8,7 +8,7 @@ export default class ObservableObject<T extends object = object> {
         const EVENT = new EventEmitter();
         EVENT.on('change', changeHandler);
 
-        return new ObservableObject<T>(dataObject, {
+        return new ProxyObject<T>(dataObject, {
             state: {
                 isNew: false,
                 changed: false,
